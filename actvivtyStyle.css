@@ -428,6 +428,10 @@ header {
     font-size: 2rem;
 }
 
+.nav-option a {
+    color: black;
+}
+
 .nav-upper-options {
     display: flex;
     flex-direction: column;
@@ -471,7 +475,7 @@ header {
     background-color: #9e9e9eb2;
 }
 
-.activity-main .activities-section {
+.activity-main .activities1-section {
     width: 40%;
     background-color: #f5f5f5;
     padding: 1.25rem;
@@ -480,7 +484,11 @@ header {
     margin-right: 1%;
 }
 
-.activity-main .activities-section h2 {
+.activity-main .activities1-section .activity:hover {
+    transform: scale(1.02);
+}
+
+.activity-main .activities1-section h2 {
     text-align: center;
     margin-bottom: 1.25rem;
     font-size: 1.5rem;
@@ -514,6 +522,70 @@ header {
     margin-right: 6rem;
 }
 
+.activity-main .testCircleParent {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 5%;
+}
+
+.activity-main .testCircle {
+    width: 52%;
+    height: 70%;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.activity-main .testCircle:hover{
+    transform: scale(1.04);
+    background-color: var(--primary-color);
+}
+
+.activity-main .testCircle img {
+    width: 75%;
+    height: 75%;
+}
+
+.activity-main .testCircleParent .circlesMainParent {
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.activity-main .testCircleParent .circlesMainParent h2 {
+    display: block;
+    position: absolute;
+    top: 93%;
+    font-size: 2rem;
+    cursor: pointer;
+    color: black;
+}
+
+.activity-main .testCircleParent .circlesMainParent h3 {
+    display: block;
+    position: absolute;
+    top: 120%;
+    color: rgba(71, 71, 71, 0.647);
+}
+
+.activity-main .testCircleParent .circlesMainParent h4 {
+    display: block;
+    position: absolute;
+    top: 140%;
+    color: rgba(71, 71, 71, 0.647);
+}
+
 
 
 /* ------------------- */
@@ -545,6 +617,26 @@ header {
     .activity-main .examSVG {
         display: none;
     }
+
+    .activity-main .testCircleParent {
+        width: 100%;
+        flex-direction: column;
+        height: 100%;
+        margin-top: 30%;
+    }
+    
+    .activity-main .testCircle {
+        width: 180%;
+        height: 90%;
+        margin: 2rem;
+    }
+
+    .activity-main .testCircleParent .circlesMainParent {
+        width: 70%;
+        height: 100%;
+        margin-top: 40%;
+    }
+
 }
 
 @media screen and (max-width: 850px) {
@@ -674,7 +766,7 @@ header {
         height: 20px;
     }
 
-    .activity-main .activities-section {
+    .activity-main .activities1-section {
         width: 80%;
     }
 }
