@@ -518,7 +518,7 @@ header {
 }
 
 .activity-main .examSVG {
-    width: 45%;
+    width: 48%;
     margin-right: 6rem;
 }
 
@@ -530,6 +530,7 @@ header {
     align-items: center;
     gap: 1rem;
     margin-top: 5%;
+    position: relative;
 }
 
 .activity-main .testCircle {
@@ -543,7 +544,7 @@ header {
     cursor: pointer;
 }
 
-.activity-main .testCircle:hover{
+.activity-main .testCircle:hover {
     transform: scale(1.04);
     background-color: var(--primary-color);
 }
@@ -561,6 +562,7 @@ header {
     align-items: center;
     position: relative;
     text-align: center;
+    margin-top: 14%;
 }
 
 .activity-main .testCircleParent .circlesMainParent h2 {
@@ -584,6 +586,147 @@ header {
     position: absolute;
     top: 140%;
     color: rgba(71, 71, 71, 0.647);
+}
+
+.testCircleParent p {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 5%;
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
+
+
+/* ------- projects -------- */
+
+
+
+.projects {
+    position: relative;
+    margin-top: 30%;
+}
+
+.projects .projectsP {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 5%;
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
+.projects .projectsDiv {
+    margin-top: 11%;
+    margin-right: 3%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.projects .projectImg {
+    width: 80%;
+    height: 40%;
+    border-radius: 10px;
+    outline: 4px solid var(--Border-color);
+    outline-offset: 5px;
+}
+
+.projects .projectsDiv .coffeeProjectP {
+    font-size: 1.3rem;
+    margin-top: 10%;
+}
+
+.projects .projectsDiv .panelProjectP {
+    font-size: 1.3rem;
+    margin-top: 10%;
+}
+
+
+
+
+
+
+
+/* ------- homeworkSection -------- */
+
+
+.homeworkSection {
+    padding: 3rem;
+    margin-top: 10%;
+    position: relative;
+}
+
+.homeworkSection .homeworkP {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 5%;
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 20%;
+}
+
+.homeworkSection .tamrinParentDiv {
+    margin-top: 7%;
+    margin-right: 5%;
+}
+
+.homeworkSection form {
+    width: 75%;
+    margin: 0 0;
+}
+
+.homeworkSection .form-control,
+label {
+    display: block;
+    width: 100%;
+    margin: 0.8rem 0;
+}
+
+.homeworkSection .form-control {
+    padding: 0.375rem;
+    border-radius: 10px;
+    border: 2px solid gray;
+}
+
+.homeworkSection .form-control:focus-visible {
+    outline-offset: -2px;
+    outline: 2px solid var(--Border-color);
+    box-shadow: 0 0 3px var(--Border-color);
+}
+
+.homeworkSection .form-control1 {
+    padding: 2rem;
+    outline: 2px dashed var(--primary-color);
+    outline-offset: -7px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.homeworkSection .form-control1 input {
+    cursor: pointer;
+}
+
+.homeworkSection .btn {
+    width: 7%;
+    border: none;
+    background: none;
+    padding: 0.375rem 0.750rem;
+    border-radius: 0.375rem;
+    margin-top: 2%;
+    margin-right: 68%;
+    color: white;
+}
+
+.homeworkSection .btn.btn-send {
+    background-color: var(--Border-color);
+    outline: 2px solid var(--primary-color);
+    outline-offset: 1px;
+}
+
+.homeworkSection .date-form {
+    cursor: pointer;
 }
 
 
@@ -613,7 +756,7 @@ header {
     .items {
         width: 800px;
     }
-    
+
     .activity-main .examSVG {
         display: none;
     }
@@ -622,9 +765,9 @@ header {
         width: 100%;
         flex-direction: column;
         height: 100%;
-        margin-top: 30%;
+        margin-top: 80%;
     }
-    
+
     .activity-main .testCircle {
         width: 180%;
         height: 90%;
@@ -635,6 +778,13 @@ header {
         width: 70%;
         height: 100%;
         margin-top: 40%;
+    }
+
+    .testCircleParent p {
+        top: 0;
+        right: 5%;
+        font-size: 2.5rem;
+        margin-top: -60%;
     }
 
 }
