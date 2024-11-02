@@ -597,6 +597,17 @@ header {
     margin-top: 0;
 }
 
+.testCircleParent .examsP {
+    outline: 5px solid rgba(0, 0, 0, 0.644);
+    border-radius: 10px;
+    outline-offset: 10px;
+}
+
+.testCircleParent .examTdot {
+    margin-right: 13%;
+    color: rgba(0, 0, 0, 0.644);
+}
+
 
 
 /* ------- projects -------- */
@@ -608,7 +619,7 @@ header {
     margin-top: 30%;
 }
 
-.projects .projectsP {
+.projects p {
     display: block;
     position: absolute;
     top: 0;
@@ -617,8 +628,19 @@ header {
     margin-top: 0;
 }
 
+.projects .projectsP {
+    outline: 5px solid rgba(0, 0, 0, 0.644);
+    border-radius: 10px;
+    outline-offset: 10px;
+}
+
+.projects .projectTdot {
+    margin-right: 12%;
+    color: rgba(0, 0, 0, 0.644);
+}
+
 .projects .projectsDiv {
-    margin-top: 11%;
+    margin-top: 13%;
     margin-right: 3%;
     text-align: center;
     cursor: pointer;
@@ -634,15 +656,15 @@ header {
 
 .projects .projectsDiv .coffeeProjectP {
     font-size: 1.3rem;
-    margin-top: 10%;
+    margin-top: 7%;
+    font-weight: normal;
 }
 
 .projects .projectsDiv .panelProjectP {
     font-size: 1.3rem;
-    margin-top: 10%;
+    margin-top: 7%;
+    font-weight: normal;
 }
-
-
 
 
 
@@ -657,7 +679,7 @@ header {
     position: relative;
 }
 
-.homeworkSection .homeworkP {
+.homeworkSection p {
     display: block;
     position: absolute;
     top: 0;
@@ -665,6 +687,17 @@ header {
     font-size: 2.5rem;
     margin-top: 0;
     margin-bottom: 20%;
+}
+
+.homeworkSection .homeworkP {
+    outline: 5px solid rgba(0, 0, 0, 0.205);
+    border-radius: 10px;
+    outline-offset: 10px;
+}
+
+.homeworkSection .homeworkTdot {
+    margin-right: 14.5%;
+    color: rgba(0, 0, 0, 0.205);
 }
 
 .homeworkSection .tamrinParentDiv {
@@ -717,6 +750,7 @@ label {
     margin-top: 2%;
     margin-right: 68%;
     color: white;
+    cursor: pointer;
 }
 
 .homeworkSection .btn.btn-send {
@@ -725,13 +759,72 @@ label {
     outline-offset: 1px;
 }
 
+.homeworkSection .btn.btn-send:hover{
+    transform: scale(1.02);
+    background-color: #004e97c3;
+}
+
 .homeworkSection .date-form {
     cursor: pointer;
 }
 
 
+/* ------- online-class -------- */
 
-/* ------------------- */
+
+
+.online-class {
+    padding: 3rem;
+    margin-top: 6%;
+    position: relative;
+}
+
+.online-class p {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 5%;
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 20%;
+}
+
+.online-class .onlineClassP {
+    outline: 5px solid rgba(0, 0, 0, 0.205);
+    border-radius: 10px;
+    outline-offset: 10px;
+}
+
+.online-class .onlineClassTdot {
+    margin-right: 18.2%;
+    color: rgba(0, 0, 0, 0.205);
+}
+
+.online-class .onineClassDescription {
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin-top: 5%;
+}
+
+.online-class .adobePNG {
+    width: 15%;
+    height: 15%;
+    /* margin-top: 2%;
+    display: inline; */
+}
+
+.online-class .adobeLink a {
+    color: #0080ff;
+    font-size: 1.3rem;
+}
+
+.online-class .adobeParent {
+    margin-top: 5%;
+}
+
+
+
+
 
 
 
@@ -765,7 +858,7 @@ label {
         width: 100%;
         flex-direction: column;
         height: 100%;
-        margin-top: 80%;
+        margin-top: 90%;
     }
 
     .activity-main .testCircle {
@@ -785,6 +878,74 @@ label {
         right: 5%;
         font-size: 2.5rem;
         margin-top: -60%;
+    }
+
+    .testCircleParent .examTdot , .projects .projectTdot , .homeworkSection .homeworkTdot {
+        display: none;
+    }
+
+    .projects {
+        margin-top: 120%;
+        flex-direction: column;
+    }
+
+    .projects .projectsDiv1 {
+        margin-top: 50%;
+    }
+
+    .projects .projectsDiv2 {
+        margin-top: 20%;
+    }
+
+    .homeworkSection {
+        margin-top: 20%;
+    }
+
+    .homeworkSection .tamrinParentDiv {
+        margin-top: 40%;
+    }
+
+    .homeworkSection form {
+        width: 140%;
+        margin-right: -17%;
+    }
+
+    .homeworkSection .btn {
+        width: 40%;
+        margin-top: 5%;
+        margin-right: 80%;
+    }
+
+    .testCircleParent .examsP {
+        outline: none;
+        margin-right: -15%;
+        background-color: white;
+        padding-left: 40%;
+        padding-right: 40%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .projects .projectsP {
+        outline: none;
+        margin-right: -15%;
+        background-color: white;
+        padding-left: 42%;
+        padding-right: 40%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .homeworkSection .homeworkP {
+        outline: none;
+        margin-right: -25%;
+        background-color: white;
+        padding-left: 60%;
+        padding-right: 50%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        display: inline-block;
+        white-space: nowrap;
     }
 
 }
