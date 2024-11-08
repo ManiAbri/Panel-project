@@ -529,7 +529,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    margin-top: 5%;
+    margin-top: 6.5%;
     position: relative;
 }
 
@@ -562,7 +562,7 @@ header {
     align-items: center;
     position: relative;
     text-align: center;
-    margin-top: 14%;
+    margin-top: 20%;
 }
 
 .activity-main .testCircleParent .circlesMainParent h2 {
@@ -598,15 +598,20 @@ header {
 }
 
 .testCircleParent .examsP {
-    outline: 5px solid rgba(0, 0, 0, 0.644);
+    outline: 4px solid white;
+    background-color: white;
     border-radius: 10px;
-    outline-offset: 10px;
+    outline-offset: 5px;
+    position: absolute;
+    right: 37%;
+    padding: 1% 7% 1% 7%;
+    /*top-right-bottom-left*/
 }
 
-.testCircleParent .examTdot {
+/* .testCircleParent .examTdot {
     margin-right: 13%;
     color: rgba(0, 0, 0, 0.644);
-}
+} */
 
 
 
@@ -629,18 +634,23 @@ header {
 }
 
 .projects .projectsP {
-    outline: 5px solid rgba(0, 0, 0, 0.644);
+    outline: 4px solid white;
+    background-color: white;
     border-radius: 10px;
-    outline-offset: 10px;
+    outline-offset: 5px;
+    position: absolute;
+    right: 38%;
+    padding: 1% 7% 1% 7%;
+    /*top-right-bottom-left*/
 }
 
-.projects .projectTdot {
+/* .projects .projectTdot {
     margin-right: 12%;
     color: rgba(0, 0, 0, 0.644);
-}
+} */
 
 .projects .projectsDiv {
-    margin-top: 13%;
+    margin-top: 15%;
     margin-right: 3%;
     text-align: center;
     cursor: pointer;
@@ -652,6 +662,10 @@ header {
     border-radius: 10px;
     outline: 4px solid var(--Border-color);
     outline-offset: 5px;
+}
+
+.projects .projectImg:hover {
+    transform: scale(1.02);
 }
 
 .projects .projectsDiv .coffeeProjectP {
@@ -690,24 +704,34 @@ header {
 }
 
 .homeworkSection .homeworkP {
-    outline: 5px solid rgba(0, 0, 0, 0.205);
+    outline: 4px solid white;
+    background-color: white;
     border-radius: 10px;
-    outline-offset: 10px;
+    outline-offset: 5px;
+    position: absolute;
+    right: 38%;
+    padding: 1% 7% 1% 7%;
+    /*top-right-bottom-left*/
 }
 
-.homeworkSection .homeworkTdot {
+/* .homeworkSection .homeworkTdot {
     margin-right: 14.5%;
     color: rgba(0, 0, 0, 0.205);
-}
+} */
 
 .homeworkSection .tamrinParentDiv {
-    margin-top: 7%;
-    margin-right: 5%;
+    margin-top: 10%;
+    margin-right: 8%;
+    margin-left: 5%;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-top: 1rem !important;
 }
 
 .homeworkSection form {
     width: 75%;
-    margin: 0 0;
+    margin: auto 6.5rem auto 1rem;
 }
 
 .homeworkSection .form-control,
@@ -716,6 +740,7 @@ label {
     width: 100%;
     margin: 0.8rem 0;
 }
+
 
 .homeworkSection .form-control {
     padding: 0.375rem;
@@ -742,13 +767,14 @@ label {
 }
 
 .homeworkSection .btn {
-    width: 7%;
+    width: 9%;
     border: none;
     background: none;
     padding: 0.375rem 0.750rem;
     border-radius: 0.375rem;
     margin-top: 2%;
-    margin-right: 68%;
+    margin-bottom: 3%;
+    margin-right: 72%;
     color: white;
     cursor: pointer;
 }
@@ -759,7 +785,7 @@ label {
     outline-offset: 1px;
 }
 
-.homeworkSection .btn.btn-send:hover{
+.homeworkSection .btn.btn-send:hover {
     transform: scale(1.02);
     background-color: #004e97c3;
 }
@@ -827,11 +853,10 @@ label {
 
 
 
-
-
-/* Responsive CSS Here */
+/* --------- Responsive --------- */
 
 @media screen and (max-width: 950px) {
+
     .nav-img {
         height: 25px;
     }
@@ -880,7 +905,10 @@ label {
         margin-top: -60%;
     }
 
-    .testCircleParent .examTdot , .projects .projectTdot , .homeworkSection .homeworkTdot {
+    .testCircleParent .examTdot,
+    .projects .projectTdot,
+    .homeworkSection .homeworkTdot,
+    .online-class .onlineClassTdot {
         display: none;
     }
 
@@ -948,183 +976,215 @@ label {
         white-space: nowrap;
     }
 
-}
-
-@media screen and (max-width: 850px) {
-    .nav-img {
-        height: 30px;
+    .online-class .onlineClassP {
+        outline: none;
+        margin-right: -24%;
+        background-color: white;
+        padding-left: 42%;
+        padding-right: 40%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        display: inline-block;
+        white-space: nowrap;
     }
 
-    .nav-option {
-        gap: 30px;
+    .online-class .onineClassDescription {
+        font-weight: 400;
+        font-size: 1.1rem;
+        margin-top: 30%;
+        width: 120%;
     }
 
-    .nav-option h3 {
-        font-size: 20px;
+    .online-class .adobePNG {
+        width: 15%;
+        height: 15%;
     }
 
-    .report-topic-heading,
-    .item1,
-    .items {
-        width: 700px;
+    .online-class .adobeLink a {
+        color: #0080ff;
+        font-size: 1rem;
     }
 
-    .navcontainer {
-        width: 100vw;
-        position: absolute;
-        transition: all 0.6s ease-in-out;
-        top: 0;
-        right: -100vw;
-    }
-
-    .nav {
-        width: 100%;
-        position: absolute;
-    }
-
-    .navclose {
-        right: 0;
-    }
-
-    .searchbar {
-        display: none;
-    }
-
-    .main {
-        padding: 40px 30px 30px 30px;
-    }
-
-    .searchbar2 {
-        width: 100%;
-        display: flex;
-        margin: 0 0 40px 0;
-        justify-content: center;
-    }
-
-    .searchbar2 input {
-        width: 250px;
-        height: 42px;
-        border-radius: 0 50px 50px 0;
-        background-color: #ededed;
-        padding: 0 20px;
-        font-size: 15px;
-        border: 2px solid var(--secondary-color);
+    .online-class .adobeParent {
+        margin-top: 8%;
     }
 }
 
-@media screen and (max-width: 490px) {
-    .message {
-        display: none;
+    @media screen and (max-width: 850px) {
+        .nav-img {
+            height: 30px;
+        }
+
+        .nav-option {
+            gap: 30px;
+        }
+
+        .nav-option h3 {
+            font-size: 20px;
+        }
+
+        .report-topic-heading,
+        .item1,
+        .items {
+            width: 700px;
+        }
+
+        .navcontainer {
+            width: 100vw;
+            position: absolute;
+            transition: all 0.6s ease-in-out;
+            top: 0;
+            right: -100vw;
+        }
+
+        .nav {
+            width: 100%;
+            position: absolute;
+        }
+
+        .navclose {
+            right: 0;
+        }
+
+        .searchbar {
+            display: none;
+        }
+
+        .main {
+            padding: 40px 30px 30px 30px;
+        }
+
+        .searchbar2 {
+            width: 100%;
+            display: flex;
+            margin: 0 0 40px 0;
+            justify-content: center;
+        }
+
+        .searchbar2 input {
+            width: 250px;
+            height: 42px;
+            border-radius: 0 50px 50px 0;
+            background-color: #ededed;
+            padding: 0 20px;
+            font-size: 15px;
+            border: 2px solid var(--secondary-color);
+        }
     }
 
-    .logosec {
-        width: 100%;
-        justify-content: space-between;
+    @media screen and (max-width: 490px) {
+        .message {
+            display: none;
+        }
+
+        .logosec {
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 20px;
+        }
+
+        .menuicn {
+            height: 25px;
+        }
+
+        .nav-img {
+            height: 25px;
+        }
+
+        .nav-option {
+            gap: 25px;
+        }
+
+        .nav-option h3 {
+            font-size: 12px;
+        }
+
+        .nav-upper-options {
+            gap: 15px;
+        }
+
+        .recent-Articles {
+            font-size: 20px;
+        }
+
+        .report-topic-heading,
+        .item1,
+        .items {
+            width: 550px;
+        }
     }
 
-    .logo {
-        font-size: 20px;
+    @media screen and (max-width: 375px) {
+        .recent-Articles {
+            font-size: 17px;
+        }
+
+        .view {
+            width: 60px;
+            font-size: 10px;
+            height: 27px;
+        }
+
+        .report-header {
+            height: 60px;
+            padding: 10px 10px 5px 10px;
+        }
+
+        .searchbtn img {
+            height: 20px;
+        }
+
+        .activity-main .activities1-section {
+            width: 80%;
+        }
     }
 
-    .menuicn {
-        height: 25px;
-    }
+    @media screen and (max-width: 320px) {
+        .recent-Articles {
+            font-size: 12px;
+        }
 
-    .nav-img {
-        height: 25px;
-    }
+        .view {
+            width: 50px;
+            font-size: 8px;
+            height: 27px;
+        }
 
-    .nav-option {
-        gap: 25px;
-    }
+        .report-header {
+            height: 60px;
+            padding: 10px 5px 5px 5px;
+        }
 
-    .nav-option h3 {
-        font-size: 12px;
-    }
+        .t-op {
+            font-size: 12px;
+        }
 
-    .nav-upper-options {
-        gap: 15px;
-    }
+        .t-op-nextlvl {
+            font-size: 10px;
+        }
 
-    .recent-Articles {
-        font-size: 20px;
-    }
+        .report-topic-heading,
+        .item1,
+        .items {
+            width: 300px;
+        }
 
-    .report-topic-heading,
-    .item1,
-    .items {
-        width: 550px;
-    }
-}
+        .report-body {
+            padding: 10px;
+        }
 
-@media screen and (max-width: 375px) {
-    .recent-Articles {
-        font-size: 17px;
-    }
+        .label-tag {
+            width: 70px;
+        }
 
-    .view {
-        width: 60px;
-        font-size: 10px;
-        height: 27px;
-    }
+        .searchbtn {
+            width: 40px;
+        }
 
-    .report-header {
-        height: 60px;
-        padding: 10px 10px 5px 10px;
+        .searchbar2 input {
+            width: 180px;
+        }
     }
-
-    .searchbtn img {
-        height: 20px;
-    }
-
-    .activity-main .activities1-section {
-        width: 80%;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .recent-Articles {
-        font-size: 12px;
-    }
-
-    .view {
-        width: 50px;
-        font-size: 8px;
-        height: 27px;
-    }
-
-    .report-header {
-        height: 60px;
-        padding: 10px 5px 5px 5px;
-    }
-
-    .t-op {
-        font-size: 12px;
-    }
-
-    .t-op-nextlvl {
-        font-size: 10px;
-    }
-
-    .report-topic-heading,
-    .item1,
-    .items {
-        width: 300px;
-    }
-
-    .report-body {
-        padding: 10px;
-    }
-
-    .label-tag {
-        width: 70px;
-    }
-
-    .searchbtn {
-        width: 40px;
-    }
-
-    .searchbar2 input {
-        width: 180px;
-    }
-}
