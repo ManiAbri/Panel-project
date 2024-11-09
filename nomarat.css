@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    direction: rtl; /* تنظیم راست به چپ */
+}
+
+.grades-container {
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 128, 0.2);
+    text-align: right; /* متن را به راست تراز می‌کند */
+    color: #333;
+    overflow-x: auto; /* اجازه‌ی اسکرول افقی در صورت نیاز */
+}
+
+h2 {
+    color: #1e90ff;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* حداقل عرض برای جلوگیری از هم‌ریختگی */
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #1e90ff;
+    color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f7fbff;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* اضافه کردن رسانه‌های CSS برای اندازه‌های مختلف */
+@media (max-width: 600px) {
+    th, td {
+        font-size: 12px; /* کاهش سایز فونت در صفحات کوچک */
+        padding: 5px; /* کاهش فاصله داخلی */
+    }
+}

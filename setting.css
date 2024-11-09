@@ -1,0 +1,229 @@
+/* تنظیمات پیش‌فرض برای همه المان‌ها */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Tahoma', sans-serif;
+    background-color: #f5f7fb;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+    flex-direction: column;
+    direction: rtl; /* راست‌چین کردن متن */
+}
+
+/* پنل تنظیمات ادمین */
+.admin-settings-container {
+    width: 100%;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 128, 0.1);
+    padding: 30px;
+    text-align: right; /* راست‌چین کردن محتوا */
+    margin-top: 20px;
+}
+
+/* هدر پنل */
+.admin-header h1 {
+    font-size: 26px;
+    color: #1e90ff;
+    margin-bottom: 20px;
+}
+
+/* بخش اطلاعات حساب */
+.account-info, .security-settings, .general-settings, .notifications-settings, .reports-section, .billing-section {
+    text-align: right; /* راست‌چین کردن محتوا */
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #1e90ff;
+    margin-bottom: 15px;
+}
+
+/* جزئیات اطلاعات حساب کاربری */
+.account-details p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* تنظیمات امنیتی */
+.security-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.security-option {
+    display: flex;
+    justify-content: flex-start; /* تنظیم به سمت راست */
+    align-items: center;
+}
+
+.security-option label {
+    font-size: 16px;
+    color: #555;
+    margin-left: 10px;
+}
+
+.security-option input {
+    width: 20px;
+    height: 20px;
+}
+
+.security-option button {
+    background-color: #1e90ff;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+/* تنظیمات عمومی */
+.general-settings .general-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.general-option label {
+    font-size: 16px;
+    color: #555;
+}
+
+.general-option select {
+    padding: 8px;
+    font-size: 14px;
+    color: #555;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+/* تنظیمات اعلان‌ها */
+.notification-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.notification-option {
+    display: flex;
+    justify-content: flex-start; /* تنظیم به سمت راست */
+    align-items: center;
+}
+
+.notification-option label {
+    font-size: 16px;
+    color: #555;
+    margin-left: 10px;
+}
+
+.notification-option input {
+    width: 20px;
+    height: 20px;
+}
+
+/* گزارش‌ها */
+.report-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.report-option {
+    display: flex;
+    justify-content: flex-start; /* تنظیم به سمت راست */
+    align-items: center;
+}
+
+/* بخش فاکتورها */
+.billing-options .billing-option {
+    display: flex;
+    justify-content: flex-start; /* تنظیم به سمت راست */
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.billing-option button {
+    background-color: #1e90ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+/* جدول فاکتورها */
+.invoice-list {
+    margin-top: 20px;
+    border-top: 2px solid #ddd;
+    padding-top: 20px;
+    display: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #1e90ff;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* دکمه‌ها */
+button {
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #4682b4;
+}
+
+.logout-btn {
+    background-color: #f44336;
+}
+
+.logout-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* برای نمایش بهتر فاکتورها */
+#invoice-list {
+    display: block;
+}
