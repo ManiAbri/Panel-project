@@ -816,9 +816,14 @@ label {
 }
 
 .online-class .onlineClassP {
-    outline: 5px solid rgba(0, 0, 0, 0.205);
+    outline: 4px solid white;
+    background-color: white;
     border-radius: 10px;
-    outline-offset: 10px;
+    outline-offset: 5px;
+    position: absolute;
+    right: 34%;
+    padding: 1% 7% 1% 7%;
+    /*top-right-bottom-left*/
 }
 
 .online-class .onlineClassTdot {
@@ -829,7 +834,7 @@ label {
 .online-class .onineClassDescription {
     font-weight: 400;
     font-size: 1.3rem;
-    margin-top: 5%;
+    margin-top: 8%;
 }
 
 .online-class .adobePNG {
@@ -931,6 +936,9 @@ label {
 
     .homeworkSection .tamrinParentDiv {
         margin-top: 40%;
+        background-color: #ededed;
+        box-shadow: none;
+        border: none;
     }
 
     .homeworkSection form {
@@ -946,7 +954,7 @@ label {
 
     .testCircleParent .examsP {
         outline: none;
-        margin-right: -15%;
+        margin-right: -47%;
         background-color: white;
         padding-left: 40%;
         padding-right: 40%;
@@ -956,7 +964,7 @@ label {
 
     .projects .projectsP {
         outline: none;
-        margin-right: -15%;
+        margin-right: -48%;
         background-color: white;
         padding-left: 42%;
         padding-right: 40%;
@@ -966,7 +974,7 @@ label {
 
     .homeworkSection .homeworkP {
         outline: none;
-        margin-right: -25%;
+        margin-right: -59%;
         background-color: white;
         padding-left: 60%;
         padding-right: 50%;

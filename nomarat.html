@@ -3,59 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>پنل نمرات دانش‌آموزان</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Panel-scores</title>
+    <link rel="website icon" type="png" href="assets/img/title/webpage.png">
+    <link rel="stylesheet" href="nomarat.css">
 </head>
-<body>
-    <div class="grades-container">
-        <h2>نمرات دانش‌آموزان</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>شماره دانش‌آموز</th>
-                    <th>نام</th>
-                    <th>نام خانوادگی</th>
-                    <th>نام پدر</th>
-                    <th>نام خانوادگی پدر</th>
-                    <th>کد ملی</th>
-                    <th>نمره</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- 400 ردیف دانش‌آموز -->
-                <tr>
-                    <td>1</td>
-                    <td>آرمان</td>
-                    <td>احمدی</td>
-                    <td>حسین</td>
-                    <td>احمدی</td>
-                    <td>1234567890</td>
-                    <td>16</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>ریحانه</td>
-                    <td>رضایی</td>
-                    <td>علی</td>
-                    <td>رضایی</td>
-                    <td>1234567891</td>
-                    <td>18</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>سامان</td>
-                    <td>محمدی</td>
-                    <td>محمد</td>
-                    <td>محمدی</td>
-                    <td>1234567892</td>
-                    <td>14</td>
-                </tr>
-                <!-- بقیه ردیف‌های دانش‌آموزان در بخش اسکریپت اضافه می‌شوند -->
-            </tbody>
-        </table>
-    </div>
 
-    <script src="script.js"></script>
-    <!-- تمامی کد های مربوطه توسط علی رشتبری با کد ملی 1364781141 نوشته شده است هر گونه کپی برداری پیگرد قانونی دارد-->
-</body>
+<body>
+
+
+    <!DOCTYPE html>
+<html lang="fa">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel</title>
+
+    <link rel="stylesheet" href="assets/fonts/Vazirmatn/Vazirmatn-font-face.css">
+    <link rel="stylesheet" href="assets/fonts/Vazirmatn/Vazirmatn-Variable-font-face.css">
+
+    <link rel="stylesheet" href="assets/vendor/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="actvivtyStyle.css">
+
+</head>
+
+<body>
+    
+    <header>
+
+        <div class="logosec">
+            <div class="logo">ATMA Group</div>
+            <img src="assets/img/header/menu.png" class="icn menuicn" id="menuicn" alt="menu-icon">
+        </div>
+
+        <div class="searchbar">
+            <input type="text" placeholder="جستجو">
+            <div class="searchbtn">
+                <img src="assets/img/header/[CITYPNG.COM]Download Black Search Icon Button PNG - 700x700.png" class="icn srchicn" alt="search-icon">
+            </div>
+        </div>
+        
+        <div class="message">
+            <img src="assets/img/header/—Pngtree—box logout icon vectors_5053769.png" class="logout-icn" alt="">
+            <div class="dp">
+                <img src="assets/img/header/pngkey.com-profile-icon-png-2024792.png" class="dpicn" alt="dp">
+            </div>
+        </div>
+
+    </header>
+
+    <!----------------------------------------------------------------->
+
+    <div class="main-container">
+        <div class="navcontainer">
+            <nav class="nav">
+                <div class="nav-upper-options">
+                    <div class="nav-option option1">
+                        <i class="bi bi-layout-text-window-reverse"></i>
+                        <a href="dashboard.html">
+                            <h3> داشبورد</h3>
+                        </a>
+                        <!-- <h3> داشبورد</h3> -->
+                    </div>
+                    <div class="nav-option option2">
+                        <i class="bi bi-laptop"></i>
+                        <a href="">
+                            <h3> میز کار </h3>
+                        </a>
+                        <!-- <h3> میز کار </h3> -->
+                    </div>
+                    <div class="nav-option option3">
+                        <i class="bi bi-collection-play"></i>
+                        <a href="">
+                            <h3>دوره ها</h3>
+                        </a>
+                        <!-- <h3>دوره ها</h3> -->
+                    </div>
+                    <div class="nav-option option4">
+                        <i class="bi bi-book"></i>
+                        <a href="activity.html">
+                            <h3> فعالیت ها</h3>
+                        </a>
+                    </div>
+                    <div class="nav-option option5">
+                        <i class="bi bi-file-earmark"></i>
+                        <a href="">
+                            <h3> گزارش</h3>
+                        </a>
+                        <!-- <h3> گزارش</h3> -->
+                    </div>
+                    <div class="nav-option option6">
+                        <i class="bi bi-patch-check"></i>
+                        <a href="nomarat.html">
+                            <h3> نمرات </h3>
+                        </a>
+                        <!-- <h3> نمرات </h3> -->
+                    </div>
+                    <div class="nav-option option7">
+                        <i class="bi bi-person-workspace"></i>
+                        <a href="profile.html">
+                            <h3> پروفایل</h3>
+                        </a>
+                        <!-- <h3> پروفایل</h3> -->
+                    </div>
+                    <div class="nav-option option8">
+                        <i class="bi bi-gear-fill"></i>
+                        <a href="setting.html">
+                            <h3> تنظیمات</h3>
+                        </a>
+                        <!-- <h3> تنظیمات</h3> -->
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+
+
+        <div class="activity-main">
+            <div class="grades-container">
+                <h2>نمرات دانش‌آموزان</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>شماره دانش‌آموز</th>
+                            <th>نام</th>
+                            <th>نام خانوادگی</th>
+                            <th>نام پدر</th>
+                            <th>نام خانوادگی پدر</th>
+                            <th>کد ملی</th>
+                            <th>نمره</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- 400 ردیف دانش‌آموز -->
+                        <tr>
+                            <td>1</td>
+                            <td>آرمان</td>
+                            <td>احمدی</td>
+                            <td>حسین</td>
+                            <td>احمدی</td>
+                            <td>1234567890</td>
+                            <td>16</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>ریحانه</td>
+                            <td>رضایی</td>
+                            <td>علی</td>
+                            <td>رضایی</td>
+                            <td>1234567891</td>
+                            <td>18</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>سامان</td>
+                            <td>محمدی</td>
+                            <td>محمد</td>
+                            <td>محمدی</td>
+                            <td>1234567892</td>
+                            <td>14</td>
+                        </tr>
+                        <!-- بقیه ردیف‌های دانش‌آموزان در بخش اسکریپت اضافه می‌شوند -->
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+
+       
+    
+        <script src="nomarat.js"></script>
+        <!-- تمامی کد های مربوطه توسط علی رشتبری با کد ملی 1364781141 نوشته شده است هر گونه کپی برداری پیگرد قانونی دارد-->
+    
+
+    </body>
+    
+    </html>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 </html>

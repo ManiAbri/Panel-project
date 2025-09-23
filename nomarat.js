@@ -28,7 +28,7 @@ const fathers = [
 
 const tbody = document.querySelector("tbody");
 
-for (let i = 4; i <= 400; i++) {
+for (let i = 4; i <= 15; i++) {
     const randomStudent = students[Math.floor(Math.random() * students.length)];
     const randomFather = fathers[Math.floor(Math.random() * fathers.length)];
     const randomNationalId = Math.floor(Math.random() * 10000000000).toString();
@@ -46,3 +46,11 @@ for (let i = 4; i <= 400; i++) {
     `;
     tbody.appendChild(row);
 }
+
+let menuicn = document.querySelector(".menuicn");
+let nav = document.querySelector(".navcontainer");
+
+menuicn.addEventListener("click", () => {
+    nav.classList.toggle("navclose");
+});
+

@@ -3,151 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>پنل تنظیمات ادمین</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Panle-settings</title>
+    <link rel="website icon" type="png" href="assets/img/title/webpage.png">
+    <link rel="stylesheet" href="assets/fonts/Vazirmatn/Vazirmatn-font-face.css">
+    <link rel="stylesheet" href="assets/fonts/Vazirmatn/Vazirmatn-Variable-font-face.css">
+
+    <link rel="stylesheet" href="assets/vendor/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="setting.css">
 </head>
+
+
 <body>
-    <div class="admin-settings-container">
-        <!-- بخش Header -->
-        <header class="admin-header">
-            <div class="admin-header-content">
-                <h1>پنل تنظیمات ادمین</h1>
-            </div>
-        </header>
 
-        <!-- بخش اطلاعات حساب -->
-        <section class="account-info">
-            <h3>اطلاعات حساب کاربری</h3>
-            <div class="account-details">
-                <p><strong>نام کامل:</strong> رشتبری</p>
-                <p><strong>ایمیل:</strong> alirashtbary1387@gmail.com</p>
-                <p><strong>شماره تلفن:</strong>9012336856+</p>
-                <p><strong>آدرس:</strong> تبریز کوی نصر خیابان شهید حیدری</p>
-                <p><strong>تاریخ پیوستن:</strong> 1 فروردین 1400</p>
-                <p><strong>آخرین ورود:</strong> 5 آبان 1403</p>
-                <p><strong>وضعیت حساب:</strong> فعال</p>
-            </div>
-        </section>
 
-        <!-- بخش تنظیمات امنیتی -->
-        <section class="security-settings">
-            <h3>تنظیمات امنیتی</h3>
-            <div class="security-options">
-                <div class="security-option">
-                    <label for="two-factor">احراز هویت دو مرحله‌ای</label>
-                    <input type="checkbox" id="two-factor" checked>
-                </div>
-                <div class="security-option">
-                    <label for="change-password">تغییر رمز عبور</label>
-                    <button class="btn" id="change-password-btn">تغییر رمز عبور</button>
-                </div>
-                <div class="security-option">
-                    <label for="allowed-devices">دستگاه‌های مجاز</label>
-                    <button class="btn" id="device-settings-btn">مدیریت دستگاه‌ها</button>
-                </div>
-                <div class="security-option">
-                    <label for="ip-restriction">محدودیت IP</label>
-                    <button class="btn" id="ip-restriction-btn">مدیریت IPها</button>
-                </div>
-            </div>
-        </section>
+    <header>
 
-        <!-- بخش تنظیمات عمومی -->
-        <section class="general-settings">
-            <h3>تنظیمات عمومی</h3>
-            <div class="general-options">
-                <div class="general-option">
-                    <label for="language">زبان سایت</label>
-                    <select id="language">
-                        <option value="fa">فارسی</option>
-                        <option value="en">انگلیسی</option>
-                    </select>
-                </div>
-                <div class="general-option">
-                    <label for="theme">تم سایت</label>
-                    <select id="theme">
-                        <option value="light">روشن</option>
-                        <option value="dark">تاریک</option>
-                    </select>
-                </div>
-                <div class="general-option">
-                    <label for="timezone">منطقه زمانی</label>
-                    <select id="timezone">
-                        <option value="tehran">تهران</option>
-                        <option value="utc">UTC</option>
-                    </select>
-                </div>
-            </div>
-        </section>
+        <div class="logosec">
+            <div class="logo">ATMA Group</div>
+            <img src="assets/img/header/menu.png" class="icn menuicn" id="menuicn" alt="menu-icon">
+        </div>
 
-        <!-- بخش اعلان‌ها -->
-        <section class="notifications-settings">
-            <h3>تنظیمات اعلان‌ها</h3>
-            <div class="notification-options">
-                <div class="notification-option">
-                    <label for="email-notifications">اعلان‌های ایمیل</label>
-                    <input type="checkbox" id="email-notifications" checked>
-                </div>
-                <div class="notification-option">
-                    <label for="sms-notifications">اعلان‌های پیامک</label>
-                    <input type="checkbox" id="sms-notifications" checked>
-                </div>
-                <div class="notification-option">
-                    <label for="browser-notifications">اعلان‌های مرورگر</label>
-                    <input type="checkbox" id="browser-notifications" checked>
-                </div>
+        <div class="searchbar">
+            <input type="text" placeholder="جستجو">
+            <div class="searchbtn">
+                <img src="assets/img/header/[CITYPNG.COM]Download Black Search Icon Button PNG - 700x700.png" class="icn srchicn" alt="search-icon">
             </div>
-        </section>
-
-        <!-- بخش گزارش‌ها -->
-        <section class="reports-section">
-            <h3>گزارش‌ها و آمارها</h3>
-            <div class="report-options">
-                <div class="report-option">
-                    <label for="failed-logins">گزارش ورودهای ناموفق</label>
-                    <button class="btn" id="failed-logins-btn">مشاهده</button>
-                </div>
-                <div class="report-option">
-                    <label for="settings-changes">گزارش تغییرات تنظیمات</label>
-                    <button class="btn" id="settings-changes-btn">مشاهده</button>
-                </div>
+        </div>
+        
+        <div class="message">
+            <img src="assets/img/header/—Pngtree—box logout icon vectors_5053769.png" class="logout-icn" alt="">
+            <div class="dp">
+                <img src="assets/img/header/pngkey.com-profile-icon-png-2024792.png" class="dpicn" alt="dp">
             </div>
-        </section>
+        </div>
 
-        <!-- بخش فاکتورها و پرداخت‌ها -->
-        <section class="billing-section">
-            <h3>فاکتورها و پرداخت‌ها</h3>
-            <div class="billing-options">
-                <div class="billing-option">
-                    <label for="recent-bills">فاکتورها و خریدهای اخیر</label>
-                    <button class="btn" id="recent-bills-btn">مشاهده</button>
+    </header>
+
+    <!----------------------------------------------------------------->
+
+    <div class="main-container">
+        <div class="navcontainer">
+            <nav class="nav">
+                <div class="nav-upper-options">
+                    <div class="nav-option option1">
+                        <i class="bi bi-layout-text-window-reverse"></i>
+                        <a href="dashboard.html">
+                            <h3> داشبورد</h3>
+                        </a>
+                        <!-- <h3> داشبورد</h3> -->
+                    </div>
+                    <div class="nav-option option2">
+                        <i class="bi bi-laptop"></i>
+                        <a href="">
+                            <h3> میز کار </h3>
+                        </a>
+                        <!-- <h3> میز کار </h3> -->
+                    </div>
+                    <div class="nav-option option3">
+                        <i class="bi bi-collection-play"></i>
+                        <a href="">
+                            <h3>دوره ها</h3>
+                        </a>
+                        <!-- <h3>دوره ها</h3> -->
+                    </div>
+                    <div class="nav-option option4">
+                       <i class="bi bi-book"></i>
+                        <a href="activity.html">
+                            <h3> فعالیت ها</h3>
+                        </a>
+                    </div>
+                    <div class="nav-option option5">
+                        <i class="bi bi-file-earmark"></i>
+                        <a href="">
+                            <h3> گزارش</h3>
+                        </a>
+                        <!-- <h3> گزارش</h3> -->
+                    </div>
+                    <div class="nav-option option6">
+                        <i class="bi bi-patch-check"></i>
+                        <a href="nomarat.html">
+                            <h3> نمرات </h3>
+                        </a>
+                        <!-- <h3> نمرات </h3> -->
+                    </div>
+                    <div class="nav-option option7">
+                        <i class="bi bi-person-workspace"></i>
+                        <a href="profile.html">
+                            <h3> پروفایل</h3>
+                        </a>
+                        <!-- <h3> پروفایل</h3> -->
+                    </div>
+                    <div class="nav-option option8">
+                        <i class="bi bi-gear-fill"></i>
+                        <a href="setting.html">
+                            <h3> تنظیمات</h3>
+                        </a>
+                        <!-- <h3> تنظیمات</h3> -->
+                    </div>
+
                 </div>
-            </div>
-            <div id="invoice-list" class="invoice-list" style="display:none;">
-                <h4>فاکتورهای فروش اخیر</h4>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>شماره فاکتور</th>
-                            <th>تاریخ</th>
-                            <th>مبلغ کل</th>
-                            <th>وضعیت پرداخت</th>
-                        </tr>
-                    </thead>
-                    <tbody id="invoice-tbody">
-                        <!-- فاکتورها در اینجا نمایش داده خواهند شد -->
-                    </tbody>
-                </table>
-            </div>
-        </section>
+            </nav>
+        </div>
 
-        <!-- دکمه خروج -->
-        <section class="actions">
-            <button class="btn logout-btn">خروج</button>
-        </section>
-    </div>
+        <div class="activity-main">
+            <div class="admin-settings-container">
+                <!-- بخش Header -->
+                <header class="admin-header">
+                    <div class="admin-header-content">
+                        <h1>پنل تنظیمات ادمین</h1>
+                    </div>
+                </header>
+        
+                <!-- بخش اطلاعات حساب -->
+                <section class="account-info">
+                    <h3>اطلاعات حساب کاربری</h3>
+                    <div class="account-details">
+                        <p><strong>نام کامل:</strong> رشتبری</p>
+                        <p><strong>ایمیل:</strong> alirashtbary1387@gmail.com</p>
+                        <p><strong>شماره تلفن:</strong>9012336856+</p>
+                        <p><strong>آدرس:</strong> تبریز کوی نصر خیابان شهید حیدری</p>
+                        <p><strong>تاریخ پیوستن:</strong> 1 فروردین 1400</p>
+                        <p><strong>آخرین ورود:</strong> 5 آبان 1403</p>
+                        <p><strong>وضعیت حساب:</strong> فعال</p>
+                    </div>
+                </section>
+        
+                <!-- بخش تنظیمات امنیتی -->
+                <section class="security-settings">
+                    <h3>تنظیمات امنیتی</h3>
+                    <div class="security-options">
+                        <div class="security-option">
+                            <label for="two-factor">احراز هویت دو مرحله‌ای</label>
+                            <input type="checkbox" id="two-factor" checked>
+                        </div>
+                        <div class="security-option">
+                            <label for="change-password">تغییر رمز عبور</label>
+                            <button class="btn" id="change-password-btn">تغییر رمز عبور</button>
+                        </div>
+                        <div class="security-option">
+                            <label for="allowed-devices">دستگاه‌های مجاز</label>
+                            <button class="btn" id="device-settings-btn">مدیریت دستگاه‌ها</button>
+                        </div>
+                        <div class="security-option">
+                            <label for="ip-restriction">محدودیت IP</label>
+                            <button class="btn" id="ip-restriction-btn">مدیریت IPها</button>
+                        </div>
+                    </div>
+                </section>
+        
+                <!-- بخش تنظیمات عمومی -->
+                <section class="general-settings">
+                    <h3>تنظیمات عمومی</h3>
+                    <div class="general-options">
+                        <div class="general-option">
+                            <label for="language">زبان سایت</label>
+                            <select id="language">
+                                <option value="fa">فارسی</option>
+                                <option value="en">انگلیسی</option>
+                            </select>
+                        </div>
+                        <div class="general-option">
+                            <label for="theme">تم سایت</label>
+                            <select id="theme">
+                                <option value="light">روشن</option>
+                                <option value="dark">تاریک</option>
+                            </select>
+                        </div>
+                        <div class="general-option">
+                            <label for="timezone">منطقه زمانی</label>
+                            <select id="timezone">
+                                <option value="tehran">تهران</option>
+                                <option value="utc">UTC</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+        
+                <!-- بخش اعلان‌ها -->
+                <section class="notifications-settings">
+                    <h3>تنظیمات اعلان‌ها</h3>
+                    <div class="notification-options">
+                        <div class="notification-option">
+                            <label for="email-notifications">اعلان‌های ایمیل</label>
+                            <input type="checkbox" id="email-notifications" checked>
+                        </div>
+                        <div class="notification-option">
+                            <label for="sms-notifications">اعلان‌های پیامک</label>
+                            <input type="checkbox" id="sms-notifications" checked>
+                        </div>
+                        <div class="notification-option">
+                            <label for="browser-notifications">اعلان‌های مرورگر</label>
+                            <input type="checkbox" id="browser-notifications" checked>
+                        </div>
+                    </div>
+                </section>
+        
+                <!-- بخش گزارش‌ها -->
+                <section class="reports-section">
+                    <h3>گزارش‌ها و آمارها</h3>
+                    <div class="report-options">
+                        <div class="report-option">
+                            <label for="failed-logins">گزارش ورودهای ناموفق</label>
+                            <button class="btn" id="failed-logins-btn">مشاهده</button>
+                        </div>
+                        <div class="report-option">
+                            <label for="settings-changes">گزارش تغییرات تنظیمات</label>
+                            <button class="btn" id="settings-changes-btn">مشاهده</button>
+                        </div>
+                    </div>
+                </section>
+        
+                <!-- بخش فاکتورها و پرداخت‌ها -->
+                <section class="billing-section">
+                    <h3>فاکتورها و پرداخت‌ها</h3>
+                    <div class="billing-options">
+                        <div class="billing-option">
+                            <label for="recent-bills">فاکتورها و خریدهای اخیر</label>
+                            <button class="btn" id="recent-bills-btn">مشاهده</button>
+                        </div>
+                    </div>
+                    <div id="invoice-list" class="invoice-list" style="display:none;">
+                        <h4>فاکتورهای فروش اخیر</h4>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>شماره فاکتور</th>
+                                    <th>تاریخ</th>
+                                    <th>مبلغ کل</th>
+                                    <th>وضعیت پرداخت</th>
+                                </tr>
+                            </thead>
+                            <tbody id="invoice-tbody">
+                                <!-- فاکتورها در اینجا نمایش داده خواهند شد -->
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+        
+                <!-- دکمه خروج -->
+                <section class="actions">
+                    <button class="btn logout-btn">خروج</button>
+                </section>
+            </div>
+        
+            <script src="setting.js"></script>
+        <!-- تمامی کد های مربوطه توسط علی رشتبری با کد ملی 1364781141 نوشته شده است هر گونه کپی برداری پیگرد قانونی دارد-->
+        </div>
 
-    <script src="script.js"></script>
-<!-- تمامی کد های مربوطه توسط علی رشتبری با کد ملی 1364781141 نوشته شده است هر گونه کپی برداری پیگرد قانونی دارد-->
-</body>
+
+
+    </body>
+
+    
 </html>
